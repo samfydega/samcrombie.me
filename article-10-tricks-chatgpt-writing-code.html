@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>Ten tricks for using ChatGPT to write code</h1>
+        <p> I've come across some common quirks, nuances, and techniques when generating code using ChatGPT. Below I list some tricks to avoid wasting time.</P>
+
+        <p>#1: Keep any code blocks you are generating to ~100 lines max. If each line has less than 20 characters, you can probably get away with 125 to 150 lines. </p>
+        <ul>
+            <li>Ask it to not generate comments in the codeblock and explanations of the code to get greater length.</li>
+            <li>1 token is ~3-4 characters.</li>
+        </ul>
+        <p>#2: If you generate a code block and follow up with a request to change the code, be incredibly specific about the function, div block, component, etc. that you want to edit. ChatGPT has a tendency to re-write entire programs to change 1 line of code. It may take one or two generations to get the specific block re-written.</p>
+        <p>#3: If you run ChatGPT code without editing and it throws an error, copy and paste the error in the conversation to see if it can correct the program.</p>
+        <ul>
+            <li>Sometimes, the program will acknowledge a change that should be made and not make it. Confront it in the follow up.</li>
+            <li>If it can't generate the correct code by attempt #3, it will require a re-prompt/doing it yourself >:(</li>
+        </ul>
+        <p>#4: If the code you want spans multiple sections of a file or multiple files, break down each part of the problem into pieces and generate each block one at a time.</p>
+        <p>#5: If a chat goes beyond 50 messages, start a new session. Copy and paste any important context into the new session.</p>
+        <ul>
+            <li> When chats get too long, the context window escapes the original messages.</li>
+        </ul>
+        <p>#6: Pseudocode is the ideal prompt you want to provide (which keeps you intellectually honest).</p>
+        <p>#7: Stick to the most popular libraries for specific functionality to keep the code high-quality.</p>
+        <ul>
+            <li> If you are using a new/niche library, feed in the relevant code snippets and see if it can properly abstract.</li>
+            <li> If you want to re-implement some easily constructed library, ask it to.</li>
+        </ul>
+        <p>#8: If a library/code isn't working, provide the code block and ask for alternative implementations.</p>
+        <p>#9: If a lengthy block of code gets cut off mid-completion and you can't figure out how to complete it in multiple components, specify the last notable element/function/variable the chat stopped generating at and ask it to continue where it left off.</p>
+        <ul>
+            <li> This usually takes a few times.</li>
+        </ul>
+        <p> #10: If you are using reference information to generate new code, ask for an explanation (in a follow-up) of the code to fill any conceptual gaps. </p>
+    </body>
+</html>
